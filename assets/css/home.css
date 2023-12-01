@@ -1,0 +1,18 @@
+.page-main h1 {
+    color: #4285f4;
+}
+
+code {
+    background-color: #f0f0f0;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+}
+
+pre {
+    margin: 0;
+}
+
+p {
+    line-height: 1.6;
+}
