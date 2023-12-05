@@ -1,0 +1,28 @@
+.about-page-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-items img {
+        opacity: .5;
+        max-width: 100%; 
+        height: auto; 
+        display: block; 
+        margin: 0 auto; 
+        border: 2px solid #ccc; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-items {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    /* Hide text and show icons */
+    .about-page-container {
+        display: flex;
+        flex-wrap: wrap;    
+        flex-direction: column;
+    }
+}

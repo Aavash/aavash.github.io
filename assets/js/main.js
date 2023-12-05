@@ -1,3 +1,4 @@
+
 const pageList = [
     'home',
     'about',
@@ -15,6 +16,7 @@ const fetchAndChangeContent = (page, content_div_id) => {
     .then(response => response.text())
     .then(data => {
         document.getElementById(content_div_id).innerHTML = data;
+        showSlide();
     })
     .catch(error => console.error('Error fetching HTML file:', error));
 }
@@ -37,6 +39,7 @@ pageList.map(page => {
 
 // On page load homepage by default
 document.addEventListener('DOMContentLoaded', function() {
-    fetchAndChangeContent('home', 'content')
-    document.getElementById('home').classList.add('highlight');
+    fetchAndChangeContent('about', 'content') // load home page by default
+    fetchAndChangeContent('slider', 'slider') // If slider in any page, load the slider
+    document.getElementById('about').classList.add('highlight');
 });
