@@ -25,7 +25,7 @@ pageList.map(page => {
         event.preventDefault();
         const scrollPosition = window.scrollY || window.pageYOffset; // Save initial position
         fetchAndChangeContent(page, 'content')
-        document.querySelectorAll('.sidebar ul li').forEach(item => {
+        document.querySelectorAll('#sidebar-nav ul li').forEach(item => {
             item.classList.remove('highlight')
         })
         document.getElementById(page).classList.add('highlight');

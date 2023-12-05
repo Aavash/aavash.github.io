@@ -16,3 +16,8 @@ pre {
 p {
     line-height: 1.6;
 }
+
+.banner {
+    height: 50vh;
+    width: 100vh;
+}
