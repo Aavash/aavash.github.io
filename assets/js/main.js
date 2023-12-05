@@ -33,6 +33,7 @@ pageList.map(page => {
         document.getElementById(page).classList.add('highlight');
 
         window.scrollTo(0, scrollPosition); // Retain initial position
+        fetchAndChangeContent('slider', 'slider') // If slider in any page, load the slider
 
     });
 })

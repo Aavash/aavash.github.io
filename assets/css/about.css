@@ -1,3 +1,10 @@
+#about-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .about-page-container {
     padding: 20px;
     display: flex;
