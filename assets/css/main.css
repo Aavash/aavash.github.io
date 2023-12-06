@@ -21,6 +21,10 @@ body {
 }
 
 
+p {
+    text-align: justify
+}
+
 .container {
     display: flex;
 }
@@ -71,7 +75,7 @@ body {
 }
 
 .logo-container img {
-    opacity: .5;
+    opacity: .6;
     max-width: 100%; 
     height: auto;
 }
@@ -90,6 +94,13 @@ body {
     overflow: auto;
 }
 
+.page-main h1 {
+    color: #8b4513;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
 .page-main:first-child {
     flex: 1;
 }
@@ -104,4 +115,3 @@ body {
     height: 20vh; 
     text-align: center;
 }
-
