@@ -1,0 +1,57 @@
+/* Styles for the skills container */
+.skills-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    background-color: #f0f0f0; /* Gray background color */
+    border: 2px solid #333; /* Border around the content */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Styles for individual skills */
+.skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+/* Styles for skill labels */
+.skill-label {
+    font-weight: bold;
+    flex: 1;
+    padding-right: 10px;
+    color: #333; /* Dark text color */
+}
+
+/* Styles for rating bars */
+.rating-bar {
+    flex: 2;
+    height: 20px;
+    background-color: #ccc; /* Light gray background for rating bars */
+    border-radius: 10px;
+    position: relative;
+    margin-left: 10px;
+}
+
+/* Styles for animated rating fill */
+.rating-fill {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #3498db; /* Blue color for rating fill */
+    animation: fillAnimation 2s ease-in-out;
+}
+
+/* Keyframes for animation */
+@keyframes fillAnimation {
+    0% { width: 0; }
+}
+
+/* Add specific animation durations for each skill */
+.skill:nth-child(1) .rating-fill { animation-duration: 2s; width: 90%; }
+.skill:nth-child(2) .rating-fill { animation-duration: 2s; width: 80%; }
+.skill:nth-child(3) .rating-fill { animation-duration: 2s; width: 70%; }
