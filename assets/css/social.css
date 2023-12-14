@@ -5,16 +5,16 @@
     flex-wrap: wrap; /* Items wrap to the next line if necessary */
     justify-content: center; /* Center items horizontally */
     gap: 20px; /* Gap between grid items */
-    max-width: 1200px; /* Limit the container width if needed */
+    /* max-width: 1200px; Limit the container width if needed */
     padding: 20px;
 }
 
 /* Styles for individual flex grid items */
 .flex-item {
     text-align: center;
-    flex-basis: calc(50% - 20px); /* Two items per row with 20px gap on smaller screens */
+    flex-basis: calc(50% - 20px); /* Three items per row with 20px gap initially */
 }
-.social-item-grid {
+.work-item-grid {
     padding: 5%;
 }
 
@@ -24,8 +24,19 @@
     height: auto;
 }
 
+.flex-item a{
+    text-decoration: none;
+    color: #333;
+}
+
 /* Styles for short descriptions beneath the images */
 .description {
     margin-top: 10px;
     font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .flex-item {
+        flex-basis: calc(100% - 20px); /* Two items per row with 20px gap on smaller screens */
+    }
 }
