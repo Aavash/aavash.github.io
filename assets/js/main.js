@@ -5,9 +5,9 @@ const pageList = [
     'skills',
     'works',
     'resume',
-    'hobbies',
+    // 'hobbies',
     'social',
-    'open_source',
+    // 'open_source',
     'contact_me',
 ]
 
@@ -40,7 +40,7 @@ pageList.map(page => {
 
 // On page load homepage by default
 document.addEventListener('DOMContentLoaded', function() {
-    fetchAndChangeContent('resume', 'content') // load home page by default
+    fetchAndChangeContent('social', 'content') // load home page by default
     fetchAndChangeContent('slider', 'slider') // If slider in any page, load the slider
     document.getElementById('home').classList.add('highlight');
 });

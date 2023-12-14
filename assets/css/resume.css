@@ -1,14 +1,20 @@
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-}
-
-.header {
+.resume-header {
     text-align: center;
+    margin: 20px;
 }
 
-.section {
-    margin: 20px 0;
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section:first-child {
+    margin: 20px;
+    flex: 1;
+}
+
+.section:last-child {
+    flex: 2; 
 }
 
 .section-title {
@@ -23,6 +29,10 @@ body {
     padding: 0;
 }
 
+.experience>li {
+    margin-bottom: 15px;
+}
+
 .job-title,
 .degree {
     font-weight: bold;
@@ -31,4 +41,17 @@ body {
 .company,
 .university {
     font-style: italic;
+}
+
+.position {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .section {
+        margin: 20px;
+        flex: 1;
+    }
+    
 }
