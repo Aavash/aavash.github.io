@@ -45,7 +45,7 @@ p {
 }
 
 #content {
-    background: linear-gradient(to right, #808080, #c0c0c0); /* Gradient from medium grey to light grey */
+    background: linear-gradient(to right, #808080, #c0c0c0); 
 }
 
 #sidebar-nav ul {
@@ -90,7 +90,6 @@ p {
 }
 
 @media (max-width: 768px) {
-    /* Hide text and show icons */
     .nav-text {
         display: none;
     }
