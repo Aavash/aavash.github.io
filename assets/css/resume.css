@@ -3,18 +3,10 @@
     margin: 20px;
 }
 
+
 .resume-container {
     display: flex;
     justify-content: space-between;
-}
-
-.section:first-child {
-    margin: 20px;
-    flex: 1;
-}
-
-.section:last-child {
-    flex: 2; 
 }
 
 .section-title {
