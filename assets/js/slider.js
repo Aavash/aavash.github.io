@@ -25,3 +25,10 @@ function showSlide(index) {
         slides[slideIndex].style.display = 'block';
     }
 }
+
+
+function moveSlider() {
+    nextImage();
+}
+
+const timerInterval = setInterval(moveSlider, 5000);
