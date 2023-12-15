@@ -5,6 +5,10 @@
     min-height: 100vh;
 }
 
+.work-page-container h1{
+    margin-bottom: 40px;
+} 
+
 .work-items-container {
     display: flex;
     flex-wrap: wrap;

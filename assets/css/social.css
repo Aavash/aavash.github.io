@@ -2,8 +2,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
+
+.social-page-description {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.social-page-description h1 {
+    text-align: center;
+}
+
+.social-page-description p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
 
 .social-items-container {
     width: 80%;

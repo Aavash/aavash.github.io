@@ -40,7 +40,7 @@ pageList.map(page => {
 
 // On page load homepage by default
 document.addEventListener('DOMContentLoaded', function() {
-    fetchAndChangeContent('social', 'content') // load home page by default
+    fetchAndChangeContent('resume', 'content') // load home page by default
     fetchAndChangeContent('slider', 'slider') // If slider in any page, load the slider
     document.getElementById('home').classList.add('highlight');
 });
