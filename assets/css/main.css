@@ -89,17 +89,6 @@ p {
     height: auto;
 }
 
-@media (max-width: 768px) {
-    .nav-text {
-        display: none;
-    }
-
-    .nav-display{
-        display: none;
-    }
-
-}
-
 .page-main {
     flex: 1;
     padding: 20px;
@@ -129,3 +118,19 @@ p {
     height: 20vh; 
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+    .nav-text {
+        display: none;
+    }
+
+    .nav-display{
+        display: none;
+    }
+
+    #sidebar-nav ul li{
+        text-align: center;
+    }
+
+}
+
