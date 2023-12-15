@@ -2,10 +2,13 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .description {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .contact-form {
@@ -14,18 +17,16 @@
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.8);
-    width: 50%;
+    width: 100%; 
+    max-width: 500px; 
     text-align: center;
     display: flex;
     align-items: center;
-}
-
-.contact-form h2 {
-    text-align: center;
+    flex-direction: column;
 }
 
 .contact-form form {
-    text-align: left;
+    width: 100%;
 }
 
 .contact-form input[type="text"],
@@ -36,14 +37,27 @@
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 3px;
+    box-sizing: border-box;
 }
 
 .contact-form button[type="submit"] {
     background-color: #808080;
     padding: 10px 20px;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
     cursor: pointer;
     margin-top: 10px;
     background-color: #c0c0c0;
+    width: 30%;
+}
+
+/* Responsive Media Query */
+@media (max-width: 768px) {
+    .contact-page-container {
+        padding: 5px;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
 }
