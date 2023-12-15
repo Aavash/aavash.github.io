@@ -25,6 +25,15 @@ p {
     text-align: justify
 }
 
+.page-generic {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .container {
     display: flex;
 }
