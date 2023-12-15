@@ -3,7 +3,7 @@
     margin: 20px;
 }
 
-.container {
+.resume-container {
     display: flex;
     justify-content: space-between;
 }
@@ -51,7 +51,10 @@
 @media (max-width: 768px) {
     .section {
         margin: 20px;
-        flex: 1;
+    }
+
+    .resume-container {
+        flex-direction: column;
     }
     
 }

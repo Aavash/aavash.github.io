@@ -85,6 +85,11 @@ p {
     .nav-text {
         display: none;
     }
+
+    .nav-display{
+        display: none;
+    }
+
 }
 
 .page-main {
@@ -110,8 +115,9 @@ p {
 }
 
 .footer {
+    display: flex;
     background-color: #333; 
     color: #fff;
     height: 20vh; 
-    text-align: center;
+    justify-content: center;
 }
