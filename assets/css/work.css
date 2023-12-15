@@ -1,53 +1,46 @@
-/* Styles for the parent container */
-.parent-container {
+.work-page-container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
-/* Styles for the flex grid container */
-.flex-container {
+.work-items-container {
     display: flex;
-    flex-wrap: wrap; /* Items wrap to the next line if necessary */
-    justify-content: center; /* Center items horizontally */
-    gap: 20px; /* Gap between grid items */
-    max-width: 1200px; /* Limit the container width if needed */
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+    max-width: 1200px; 
     padding: 20px;
 }
 
-/* Styles for individual flex grid items */
-.flex-item {
+.work-item {
     text-align: center;
-    flex-basis: calc(33.33% - 20px); /* Three items per row with 20px gap initially */
+    flex-basis: calc(33.33% - 20px); 
 }
 .work-item-grid {
     padding: 5%;
 }
 
-/* Styles for images within the flex grid items */
-.flex-item img {
+.work-item img {
     max-width: 100%;
     height: auto;
 }
 
-/* Styles for short descriptions beneath the images */
 .description {
     margin-top: 10px;
     font-size: 16px;
 }
 
-/* Media query for smaller screens */
 @media (max-width: 768px) {
-    .flex-item {
-        flex-basis: calc(50% - 20px); /* Two items per row with 20px gap on smaller screens */
+    .work-item {
+        flex-basis: calc(50% - 20px); 
     }
 }
 
-/* Highlight on hover */
-.flex-item:hover {
-    border-color: #007bff; /* Highlight border color on hover */
-    background-color: #f0f0f0; /* Highlight background color on hover */
+.work-item:hover {
+    border-color: #007bff; 
+    background-color: #f0f0f0; 
 }
 
 .work-item-grid a{

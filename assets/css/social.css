@@ -1,42 +1,49 @@
-
-/* Styles for the flex grid container */
-.flex-container {
+.social-page-container {
     display: flex;
-    flex-wrap: wrap; /* Items wrap to the next line if necessary */
-    justify-content: center; /* Center items horizontally */
-    gap: 20px; /* Gap between grid items */
-    /* max-width: 1200px; Limit the container width if needed */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.social-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+    max-width: 1200px; 
     padding: 20px;
 }
 
-/* Styles for individual flex grid items */
-.flex-item {
+.social-item {
     text-align: center;
-    flex-basis: calc(50% - 20px); /* Three items per row with 20px gap initially */
+    flex-basis: calc(50% - 20px); 
 }
-.work-item-grid {
+.social-item-grid {
     padding: 5%;
 }
 
-/* Styles for images within the flex grid items */
-.flex-item img {
+.social-item img {
     max-width: 100%;
     height: auto;
 }
 
-.flex-item a{
-    text-decoration: none;
-    color: #333;
-}
-
-/* Styles for short descriptions beneath the images */
 .description {
     margin-top: 10px;
     font-size: 16px;
 }
 
 @media (max-width: 768px) {
-    .flex-item {
-        flex-basis: calc(100% - 20px); /* Two items per row with 20px gap on smaller screens */
+    .social-item {
+        flex-basis: calc(50% - 20px); 
     }
+}
+
+.social-item:hover {
+    border-color: #007bff; 
+    background-color: #f0f0f0; 
+}
+
+.social-item-grid a{
+    text-decoration: none;
+    color: #333;
 }
