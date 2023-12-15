@@ -1,3 +1,22 @@
 #homepage h1 {
     margin-bottom: 20px;
 }
+
+
+.step-button {
+    background-color: #df3079; 
+    color: white;
+    border: none; 
+    padding: 10px 20px; 
+    margin-right: 10px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.step-button:last-child {
+    margin-right: 0;
+}
+
+.home-button-group {
+    padding-top: 20px;
+}

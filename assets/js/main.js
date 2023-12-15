@@ -37,10 +37,21 @@ pageList.map(page => {
 
     });
 })
-
 // On page load homepage by default
 document.addEventListener('DOMContentLoaded', function() {
-    fetchAndChangeContent('resume', 'content') // load home page by default
+    fetchAndChangeContent('home', 'content') // load home page by default
     fetchAndChangeContent('slider', 'slider') // If slider in any page, load the slider
     document.getElementById('home').classList.add('highlight');
 });
+
+
+// document.getElementById("about-me-button").addEventListener('click', (event) => {
+//     fetchAndChangeContent('about', 'content') 
+//     document.getElementById('about').classList.add('highlight');
+
+// })
+
+// document.getElementById("contact-me-button").addEventListener('click', (event) => {
+//     fetchAndChangeContent('home', 'content') 
+//     document.getElementById('home').classList.add('highlight');
+// })
